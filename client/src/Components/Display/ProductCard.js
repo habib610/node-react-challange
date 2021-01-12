@@ -1,9 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
-    console.log(product);
-    const {name, price, countInStock, description, photo} = product
-    
+    const {name, price,_id, photo} = product
+    const history = useHistory();
+
     return (
         <div className="col-4 my-2">
             <div className="card">
@@ -13,10 +14,9 @@ const ProductCard = ({product}) => {
                 </div>
                 <div className="card-footer">
                     <div className="row justify-content-between">
-                        <button className="btn btn-primary">Details</button>
+                        <button onClick={()=> history.push(`/details/${_id}`)} className="btn btn-primary">Details</button>
                     <h2>${price}</h2>
                     </div>
-                    
                 </div>
             </div>
         </div>
