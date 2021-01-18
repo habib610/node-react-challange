@@ -1,23 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import { data } from '../../data';
-import ProductCard from './ProductCard';
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import ProductCard from "./ProductCard";
+import { listProductActions } from "../actions/ProductActions";
+import ErrorMessage from "../ErrorMessage/ErrorMessage";
+import Loading from "../Loaiding/Loading";
 
 const Product = () => {
-    const [products, setProduct] = useState([])
-    
-    useEffect(()=> {
-        setProduct(data)
-    }, [])
+  const dispatch = useDispatch();
+  const productList = useSelector((state) => state.productList);
+  const { loading, error, products } = productList;
+  console.log(products)
+  useEffect(() => {
+    dispatch(listProductActions());
+  }, [dispatch]);
 
-    return (
-        <div className="container"> 
+  return (
+    <div className="container">
+      {error ? (
+        <ErrorMessage variant="danger">{error}</ErrorMessage>
+      ) : loading ? (
+        <Loading />
+      ) : (
         <div className="row">
-            {
-                products.map(product=> <ProductCard key={product._id} product={product} />)
-            }
+          {products.map((product) => (
+            <ProductCard key={product._id} product={product} />
+          ))}
         </div>
-        </div>
-    );
+      )}
+    </div>
+  );
 };
 
 export default Product;

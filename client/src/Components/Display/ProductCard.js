@@ -1,9 +1,11 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 
 const ProductCard = ({product}) => {
-    const {name, price,_id, photo} = product
+    const {name, price, _id, photo} = product
     const history = useHistory();
+    const dispatch = useDispatch()
 
     return (
         <div className="col-4 my-2">

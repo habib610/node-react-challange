@@ -4,8 +4,8 @@ export const data = [
     brand: "fast track",
     price: 10,
     countInStock: 20,
-    decription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
-    catagory: "watch",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
+    category: "watch",
     photo: "https://staticimg.titan.co.in/Fastrack/Catalog/38058PP01_1.jpg?pView=listing"
 },
 {   _id: "2",
@@ -13,8 +13,8 @@ export const data = [
     brand: "fast track",
     price: 30,
     countInStock: 20,
-    decription: "Adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
-    catagory: "Watch",
+    description: "Adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
+    category: "Watch",
     photo: "https://staticimg.titan.co.in/Fastrack/Catalog/38058PP02_1.jpg?pView=listing"
 },
 {   _id: "3",
@@ -22,8 +22,8 @@ export const data = [
     brand: "fast track",
     price: 50,
     countInStock: 20,
-    decription: "Lorem ipsum dolor, sit amet consectetur psum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
-    catagory: "Watch",
+    description: "Lorem ipsum dolor, sit amet consectetur psum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
+    category: "Watch",
     photo: "https://staticimg.titan.co.in/Fastrack/Catalog/38057PP01_1.jpg?pView=listing"
 },
 {   _id: "4",
@@ -31,8 +31,8 @@ export const data = [
     brand: "fast track",
     price: 34,
     countInStock: 30,
-    decription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
-    catagory: "Watch",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
+    category: "Watch",
     photo: "https://staticimg.titan.co.in/Fastrack/Catalog/38057PP03_1.jpg?pView=listing"
 },
 {   _id: "5",
@@ -40,8 +40,8 @@ export const data = [
     brand: "fast track",
     price: 68,
     countInStock: 30,
-    decription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
-    catagory: "Watch",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
+    category: "Watch",
     photo: "https://staticimg.titan.co.in/Fastrack/Catalog/3195AP02_1.jpg?pView=listing"
 },
 {   _id: "6",
@@ -49,8 +49,8 @@ export const data = [
     brand: "fast track",
     price: 53,
     countInStock: 30,
-    decription: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
-    catagory: "Watch",
+    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo vel modi eum ipsum quia nostrum quaerat quas quisquam assumenda. Inc_idunt",
+    category: "Watch",
     photo: "https://staticimg.titan.co.in/Fastrack/Catalog/3224NL02_1.jpg?pView=listing"
 },
 ]

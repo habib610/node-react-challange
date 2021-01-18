@@ -1,0 +1,5 @@
+.border-slice {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg,#5f02f3, #f65a00);
+    border-image-slice: 1;
+}
