@@ -3,12 +3,15 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import { data } from "./data.js";
-import productRouter from "./routers/productRouters.js";
+import productRouter from "./backend/routers/productRouters.js";
+import userRouter from "./backend/routers/userRouter.js";
+import postRouter from "./backend/routers/postRouters.js";
 
 const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use(cors());
 
 mongoose.connect("mongodb://localhost/nodechallange", {
@@ -27,7 +30,9 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api/products", productRouter);
+app.use("/api/users", userRouter);
 
+app.use("/api/articles", postRouter)
 
 app.listen(port, () => {
   console.log("listen on port", port);

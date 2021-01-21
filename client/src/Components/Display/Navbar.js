@@ -14,6 +14,8 @@ const {cartProduct} = cart;
        <div className="align-self-center">
           <Link className="text-white font-weight-bold" to="/cart">Cart <span className="bg-danger rounded-circle text-white p-1">{cartProduct.length}</span> </Link>
           <Link className="text-white font-weight-bold ml-5" to ="/cart">Habib</Link>
+          <Link className="text-white font-weight-bold ml-5" to ="/create">Create</Link>
+          <Link className="text-white font-weight-bold ml-5" to ="/blog">Blog</Link>
        </div>
       </nav>
     </div>

@@ -1,4 +1,20 @@
+import bcrypt from 'bcryptjs';
 export const data = {
+    users: [
+        {
+            "name": "admin",
+            "email": "admin@example.com",
+            "password": bcrypt.hashSync("12345", 8),
+            "isAdmin": true,
+        },
+        {
+            "name": "user",
+            "email": "user@example.com",
+            "password": bcrypt.hashSync("12345", 8),
+            "isAdmin": false,
+        },
+    ]
+    ,
     product: [
         { 
             "name": "Trendies Black Dial",
