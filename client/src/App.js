@@ -11,7 +11,7 @@ function App() {
     <Navbar/>
    <Route path="/" exact  component={Product} />
    <Route path="/details/:productId" component={ProductDetails} />
-   <Route path="/cart" component={Cart} />
+   <Route path="/cart/:id?" component={Cart} />
     </BrowserRouter>
   );
 }

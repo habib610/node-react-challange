@@ -22,9 +22,9 @@ productRouter.get('/:id', expressAsyncHandler(async(req, res)=> {
     if(product) {
         res.status(200).send(product)
     }
-
-        res.status(404).send({ message: "Product Not Found" })
-    
+        else {
+            res.status(404).send({ message: "Product Not Found" })
+        }
 }))
 
 export default productRouter;

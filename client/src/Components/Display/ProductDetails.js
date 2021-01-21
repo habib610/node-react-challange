@@ -21,8 +21,8 @@ const [qty, setQty] = useState(1);
 
 
 
-const handleAddToCart = (product, qty) => {
-    console.log(product, qty);
+const handleAddToCart = (productId, qty) => {
+    props.history.push(`/cart/${productId}?qty=${qty}`)
 }
     return (
         <div className="container">
@@ -62,10 +62,11 @@ const handleAddToCart = (product, qty) => {
                             return <option  key={index} >{item + 1}</option>
                         })
                     }
-                    </select> </p> 
+                    </select>
+                    </p> 
                     </div>
                     <div className="row justify-content-between">
-                        <button onClick={()=>handleAddToCart( qty)} className="btn-primary btn-block">Add to cart</button>
+                        <button onClick={()=>handleAddToCart(productId, qty)} className="btn-primary btn-block">Add to cart</button>
                     </div>
                 </div>
             </div>  
